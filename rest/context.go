@@ -22,9 +22,10 @@ import (
 	"net/url"
 	"strconv"
 
-	"code.google.com/p/go.net/context"
 	gcontext "github.com/gorilla/context"
 	"github.com/gorilla/mux"
+
+	"github.com/Workiva/go-rest/rest/context"
 )
 
 const (
