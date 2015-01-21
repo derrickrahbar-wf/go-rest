@@ -55,7 +55,7 @@ func (c *Configuration) Debugf(format string, v ...interface{}) {
 
 // NewConfiguration returns a default Configuration.
 func NewConfiguration() *Configuration {
-	logger := log.New(os.Stdout, defaultLogPrefix, log.LstdFlags)
+	logger := log.New(os.Stderr, defaultLogPrefix, log.LstdFlags)
 	return &Configuration{
 		Debug:         true,
 		Logger:        logger,
